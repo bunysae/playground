@@ -13,6 +13,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Create comment
         with:
           path: .
