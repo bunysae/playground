@@ -19,4 +19,4 @@ jobs:
           path: .
           github-token: ${{ secrets.GITHUB_TOKEN }}
           verbose: true
-        uses: bunysae/MQL-Compile-Action@v1.5-alpha
+        uses: bunysae/MQL-Compile-Action@v1.6-alpha
