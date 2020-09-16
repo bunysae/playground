@@ -4,10 +4,10 @@ name: Test
 on:
   pull_request:
     paths:
-      - '*.js'
+      - '*'
   push:
     paths:
-      - '*.js'
+      - '*'
 
 jobs:
   build:
@@ -15,5 +15,6 @@ jobs:
     steps:
       - name: Create comment
         with:
-          bot-token: ${{ secrets.GITHUB_TOKEN }}
-        uses: bunysae/actions@v1.7
+          path: '.'
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        uses: bunysae/MQL-Compile-Action@v1.0-alpha
