@@ -15,6 +15,7 @@ jobs:
     steps:
       - name: Create comment
         with:
-          path: '.'
+          path: .
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          verbose: true
         uses: bunysae/MQL-Compile-Action@v1.0-alpha
